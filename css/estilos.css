@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0; 
+    
+}
+body{
+    background-image: url(../img/cool-background.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+
+/* card */
+
+.card {
+    background-color: #b0d2f5ce;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #706e6e;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+
+ .card h2 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+ .card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+ 
+/* butao de deletar */
+
+  .delete-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .svgIcon {
+    width: 13px;
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .delete-btn:hover {
+    width: 130px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .delete-btn:hover .svgIcon {
+    width: 40px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+  }
+  
+  .delete-btn::before {
+    position: absolute;
+    top: -20px;
+    content: "Delete";
+    color: white;
+    transition-duration: .3s;
+    font-size: 3px;
+    
+  }
+  
+  .delete-btn:hover::before {
+    font-size: 15px;
+    opacity: 1;
+    transform: translateY(20px);
+    transition-duration: .3s;
+  }
+
+/* header */
+
+.header {
+    background-color: #0c4d9a; 
+    color: #ffffff; 
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: center;
+}
+.logo img {
+    max-width: 80px; 
+}
+
+.nav-menu ul {
+    list-style-type: none; 
+    padding-right: 10px;
+}
+
+.nav-menu ul li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+.nav-menu ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
+}
+
+.nav-menu ul li a:hover {
+    color: #00c8ff; 
+   }
+
+
+/* cadastro */
+
+.alinharRotulos {
+    text-align: right;
+}
+.alinhaBtns {
+    width:30%;
+    background-color: black;
+    color:rgb(255, 255, 255);
+    border:0px;
+    padding:5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carrinho {
+    width:300px; 
+    float:right;
+}
+.carrinho p {
+    display: inline;
+}
+table {
+    clear:both; 
+    background-color: rgba(97, 172, 213, 0.747);
+    border-radius: 10px; 
+    color:rgb(0, 0, 0);
+    padding:10px;
+    width:500px;
+    height: 200px;
+    margin:auto;
+}
+caption {
+    color:rgb(0, 0, 0); 
+    font-weight: bold, initial; 
+    font-size: 25px;
+    padding-bottom: 10px;
+}
